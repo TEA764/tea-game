@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>TEA Game</title>
+    <meta charset="UTF-8">
+    <title>The Seventh Day</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>欢迎来到 TEA Game！</h1>
-    <p>我的第一个网页游戏。</p>
+<audio id="bgm" src="1.mp3" loop></audio>
+
+
+
+    <div id="game-container">
+        <div id="background"></div>
+        <div id="character-left"></div>
+          <div id="character-right"></div>
+        <div id="text-box">
+               <div id="name-box"></div>
+            <p id="story-text"></p>
+            <div id="choices"></div>
+        </div>
+        <button id="next-btn">继续</button>
+    </div>
+    <script src="story.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
