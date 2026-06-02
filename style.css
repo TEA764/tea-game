@@ -1,5 +1,6 @@
+/* ------------------- 基础布局 ------------------- */
 #game-container {
-    width: 800px;
+    width: 800px;           /* 电脑端固定宽度 */
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -8,7 +9,6 @@
 #background {
     width: 100%;
     height: 450px;
-
     background-size: cover;
     background-position: center;
 }
@@ -24,18 +24,15 @@
     background-position: center bottom;
     z-index: 1;
     transition: 0.3s;
+    transform: translateY(-10px);
 }
 
 #character-left{
-    left:30px;
+    left: 30px;
 }
 
 #character-right{
-    right:30px;
-}
-#character-left,
-#character-right {
-    transform: translateY(-10px);
+    right: 30px;
 }
 
 #text-box {
@@ -45,12 +42,12 @@
     height: 150px;
     background-color: #FFF8DC;
     color: black;
-border: 3px solid #B8860B;
+    border: 3px solid #B8860B;
     padding: 10px;
 }
 
 #story-text{
-    text-align:center;
+    text-align: center;
 }
 
 #choices button {
@@ -66,4 +63,50 @@ border: 3px solid #B8860B;
     border-radius: 8px;
     font-size: 22px;
     font-weight: bold;
+}
+
+/* ------------------- 手机横屏适配 ------------------- */
+@media (max-width: 768px) {
+    #game-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #background {
+        width: 100%;
+        height: 100%;
+    }
+
+    #character-left,
+    #character-right {
+        width: 30%;
+        height: auto;
+    }
+
+    #text-box {
+        height: 20%;
+        font-size: 16px;
+    }
+}
+
+/* ------------------- 手机竖屏提示 ------------------- */
+#rotate-warning {
+    display: none;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+    #rotate-warning {
+        display: block;
+    }
+
+    #game-container {
+        display: none;
+    }
 }
