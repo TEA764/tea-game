@@ -493,7 +493,7 @@ DAY4_STATION: {
 },
 
 DAY5_START: {
-    background: "背景/8.jpg",
+    background: "背景/9.jpg",
    characters: {left:"立绘/ZG正常.png",
                       right:""},
 
@@ -846,7 +846,9 @@ choices: [
 
 DAY7_LINYU: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "林雨抱着膝盖坐在角落。",
 "大学刚毕业。",
@@ -864,7 +866,9 @@ choices: [
 
 DAY7_OLDGAO: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "老高靠在墙边。",
 "孩子生病了。",
@@ -881,7 +885,9 @@ choices: [
 
 DAY7_CHENMO: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "陈默低头看着手机。",
 "我忍不住问道。",
@@ -899,7 +905,9 @@ choices: [
 
 DAY7_GROUPCHAT: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "不知道是谁先开的头。",
 "大家开始聊起自己的经历。",
@@ -917,7 +925,9 @@ choices: [
 
 DAY7_NIGHT: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "深夜。",
 "大家陆续睡去。",
@@ -934,7 +944,9 @@ choices: [
 
 DAY7_OB_LINYU: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "我看向林雨。",
 "发现她背对着众人。",
@@ -949,7 +961,9 @@ choices: [
 
 DAY7_OB_OLDGAO: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "老高没有睡。",
 "他正看着手机相册。",
@@ -964,7 +978,9 @@ choices: [
 
 DAY7_OB_CHENMO: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
 "陈默正盯着手机。",
 "似乎在分析什么。",
@@ -979,20 +995,23 @@ choices: [
 
 DAY7_LIVE: {
 background: "背景/11.jpg",
-character: "",
+characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
 text: [
-"手机不是没信号吗？他在干吗",
-"可能是疯了，突然发生这么多事，确实会让人接受不了",
-"先睡觉吧。",
+"之前经历的一幕幕在我脑中回响",
+"让我一直处于一种半梦半醒的状态",
 ],
 choices: [
-{ text: "DAY8", next: "DAY8_START" }
+{ text: "第五天白天", next: "DAY8_START" }
 ]
 },
 
 DAY8_START: {
     background: "背景/12.jpg",
-    character: "",
+    characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "清晨的阳光透过仓库的缝隙射进来。",
         "昨夜的紧张气氛依然在空气中回荡。",
@@ -1001,14 +1020,15 @@ DAY8_START: {
     ],
     choices: [
         { text: "叫醒大家", next: "DAY8_WAKE" },
-        { text: "自己先出去侦查", next: "DAY8_SCOUT" },
         { text: "继续观察周围", next: "DAY8_OBSERVE" }
     ]
 },
 
 DAY8_WAKE: {
     background: "背景/12.jpg",
-    character: "",
+    characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我轻轻拍了拍林雨和老高。",
         "大家慢慢醒来，眼神中充满戒备。",
@@ -1016,8 +1036,7 @@ DAY8_WAKE: {
         "我说道：\"我们得找食物和水，不能一直待在仓库里。\""
     ],
     choices: [
-        { text: "讨论行动计划", next: "DAY8_PLAN" },
-        { text: "先出去看看情况", next: "DAY8_SCOUT" }
+        { text: "讨论行动计划", next: "DAY8_PLAN" }
     ]
 },
 
@@ -1038,7 +1057,9 @@ DAY8_SCOUT: {
 
 DAY8_OBSERVE: {
     background: "背景/12.jpg",
-    character: "",
+    characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我静静观察大家的动作。",
         "林雨在整理自己的衣物，看起来很紧张。",
@@ -1047,8 +1068,7 @@ DAY8_OBSERVE: {
         "我意识到，每个人都在试图找到生存的策略。"
     ],
     choices: [
-        { text: "主动加入讨论", next: "DAY8_PLAN" },
-        { text: "先出去侦查", next: "DAY8_SCOUT" }
+        { text: "主动加入讨论", next: "DAY8_PLAN" }
     ]
 },
 
@@ -1097,8 +1117,10 @@ DAY8_CONFRONT: {
 },
 
 DAY8_PLAN: {
-    background: "",
-    character: "",
+    background: "背景/12.jpg",
+    characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "大家围坐在仓库内，开始讨论接下来的行动计划。",
         "林雨建议：\"我们需要找安全区和食物。\"",
@@ -1106,14 +1128,15 @@ DAY8_PLAN: {
         "陈默看着地图，指着远处一处建筑说：\"那边可能比较安全，我们可以先去那儿。\""
     ],
     choices: [
-        { text: "同意出发", next: "DAY8_MOVE" },
-        { text: "先分头侦查", next: "DAY8_SCOUT" }
+        { text: "同意出发", next: "DAY8_MOVE" }
     ]
 },
 
 DAY8_MOVE: {
-    background: "",
-    character: "",
+    background: "背景/12.jpg",
+    characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我们收拾好简单的物资。",
         "大家小心翼翼地走出仓库。",
@@ -1127,8 +1150,10 @@ DAY8_MOVE: {
 },
 
 DAY8_APPROACH: {
-    background: "",
-    character: "",
+    background: "背景/12.jpg",
+  characters: {left:"立绘/ZG正常.png",
+                      right:""},
+  
     text: [
         "我们小心靠近建筑。",
         "林雨不小心踩到一块碎石，发出轻响。",
@@ -1141,8 +1166,10 @@ DAY8_APPROACH: {
 },
 
 DAY8_ALTERNATE: {
-    background: "",
-    character: "",
+    background: "背景/12.jpg",
+ characters: {left:"立绘/ZG正常.png",
+                      right:""},
+  
     text: [
         "我们选择绕道前行，避开建筑的正面。",
         "途中发现一些废弃食物和水源。",
@@ -1155,8 +1182,10 @@ DAY8_ALTERNATE: {
 },
 
 DAY9_START: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+   characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我们抵达了陈默发现的废弃超市。",
         "里面摆放着凌乱的货架，还有一些幸存者在巡逻。",
@@ -1171,8 +1200,10 @@ DAY9_START: {
 },
 
 DAY9_FRIENDLY: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+  characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我走上前，举手示意：\"我们没有恶意，只是找些物资。\"",
         "壮汉皱了皱眉，沉默了一会儿，随后点头。",
@@ -1184,8 +1215,10 @@ DAY9_FRIENDLY: {
 },
 
 DAY9_ALERT: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+   characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我们保持警惕，缓缓进入超市。",
         "周围幸存者的目光都落在我们身上，气氛紧张。",
@@ -1197,8 +1230,10 @@ DAY9_ALERT: {
 },
 
 DAY9_OBSERVE: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+  characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我躲在货架后观察环境。",
         "发现周涛团队已经把物资分配好，控制着超市的安全出口。",
@@ -1210,8 +1245,10 @@ DAY9_OBSERVE: {
 },
 
 DAY9_MATERIAL: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+  characters: {left:"立绘/ZG正常.png",
+                      right:""},
+  
     text: [
         "我们找到一些物资：",
         "矿泉水 ×3",
@@ -1228,8 +1265,10 @@ DAY9_MATERIAL: {
 },
 
 DAY9_SHARE: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+  characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "我将物资情况告诉了林雨和老高。",
         "陈默点了点头，表示信任我。",
@@ -1241,8 +1280,10 @@ DAY9_SHARE: {
 },
 
 DAY9_IGNORE: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+  characters: {left:"立绘/ZG正常.png",
+                      right:""},
+ 
     text: [
         "我选择假装没看到，多观察一会儿。",
         "暂时没有风险，但也没有额外收益。",
@@ -1254,8 +1295,10 @@ DAY9_IGNORE: {
 },
 
 DAY9_STEAL: {
-    background: "",
-    character: "",
+    background: "背景/13.jpg",
+   characters: {left:"立绘/ZG尴尬.png",
+                      right:""},
+
     text: [
         "趁周涛团队不注意，我悄悄拿了一些食物。",
         "林雨瞪了我一眼，我只能苦笑。",
@@ -1267,8 +1310,10 @@ DAY9_STEAL: {
 },
 
 DAY10_START: {
-    background: "",
-    character: "",
+    background: "背景/14.jpg",
+  characters: {left:"立绘/ZG正常.png",
+                      right:""},
+ 
     text: [
         "夜晚来临，所有人都在超市内休息。",
         "突然，所有人的手机再次同时震动。",
@@ -1285,13 +1330,15 @@ DAY10_START: {
 },
 
 DAY10_OBSERVE: {
-    background: "",
-    character: "",
+    background: "背景/14.jpg",
+   characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "周涛团队立刻开始行动，搬运物资，显然想先到安全区。",
         "陈默皱起眉头，查看手机地图。",
         "新的区域出现在地图上——黑树外围区。",
-        "那正是赵哥第一天醒来时看到的巨大黑树方向。"
+        "那正是我第一天醒来时看到的巨大黑树方向。"
     ],
     choices: [
         { text: "前往黑树外围区", next: "DAY10_END" }
@@ -1299,8 +1346,10 @@ DAY10_OBSERVE: {
 },
 
 DAY10_END: {
-    background: "",
-    character: "",
+    background: "背景/15.jpg",
+   characters: {left:"立绘/ZG正常.png",
+                      right:""},
+
     text: [
         "众人站在超市楼顶，望向远方。",
         "灰红色天空下，巨树直冲云层。",
